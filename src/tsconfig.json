@@ -6,7 +6,9 @@
     "outDir": "../dist",
     "sourceMap": true,
     "esModuleInterop": true,
-    "entrypoint": "app.ts"
   },
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts"],
+  "exclude": [
+    "test",
+  ]
 }
