@@ -1,4 +1,4 @@
-const matches = [
+export const matches = [
   {
     sport: 'soccer',
     participant1: 'Chelsea',
@@ -27,12 +27,12 @@ const matches = [
     ],
   },
   {
-    sport: "tennis",
+    sport: 'tennis',
     participant1: 'Maria Sharapova',
     participant2: 'Serena Williams',
     score: '2:1,7:6,6:3,6:7',
   },
   {
-    sport: "ski jumping",
+    sport: 'ski jumping',
   }
 ];
