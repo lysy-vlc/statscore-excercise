@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "ES2019",
+    "module": "commonjs",
+    "outDir": "../dist",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "entrypoint": "app.ts"
+  },
+  "include": ["**/*.ts"]
+}
