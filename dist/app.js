@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.EventParser = void 0;
 const isMatchValid_validator_1 = require("./validators/isMatchValid.validator");
 const isSportValid_validator_1 = require("./validators/isSportValid.validator");
 const getMatchTeamsSeparator_helper_1 = require("./helpers/getMatchTeamsSeparator.helper");
@@ -40,6 +41,7 @@ class EventParser {
         }
     }
 }
+exports.EventParser = EventParser;
 function parseMatches(matchesToParse) {
     const parser = new EventParser();
     const parsedMatches = [];

@@ -6,7 +6,7 @@ import { getScoresFromRegexMatches } from './helpers/getScoresFromRegexMatches.h
 import { getStringScoreFormatFromMatrix } from './helpers/getStringScoreFormatFromMatrix'
 import { SCORE_TYPES_MATCHING_SPORTS } from './helpers/scoreTypes.helper'
 
-class EventParser {
+export class EventParser {
   isMatchValid(match: ValidMatchCandidate): boolean {
     return isMatchValid(match);
   }

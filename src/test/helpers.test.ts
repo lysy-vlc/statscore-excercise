@@ -19,7 +19,7 @@ describe('get scores from regex matches', () => {
   test('should be \"[ \'2:1\', \'7:6\', \'6:3\' ]\"', () => {
     const scores = /([0-9]+\:[0-9]+),([0-9]+\:[0-9]+),([0-9]+\:[0-9]+),([0-9]+\:[0-9]+)/.exec(matches[4].score as string);
 
-    expect(getScoresFromRegexMatches(scores)).toEqual([ '2:1', '7:6', '6:3' ]);
+    expect(getScoresFromRegexMatches(scores)).toEqual([ '2:1', '7:6', '6:3', '6:7' ]);
   });
 
   test('should be \"Exception: wrong scores\"', () => {
@@ -29,6 +29,6 @@ describe('get scores from regex matches', () => {
 
 describe('get string score format from matrix', () => {
   test('should be "9:7, 2:1, 5:3, 9:9"', () => {
-    expect(getStringScoreFormatFromMatrix(matches[3].score)).toBe('9:7, 2:1, 5:3, 9:9')
+    expect(getStringScoreFormatFromMatrix(matches[3].score)).toBe('9:7,2:1,5:3,9:9')
   })
 })
