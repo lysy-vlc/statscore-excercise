@@ -1,4 +1,4 @@
-1. Run code
+1. Install packages
 ```bash
 npm i
 ```
