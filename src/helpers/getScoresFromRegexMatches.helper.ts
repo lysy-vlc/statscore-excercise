@@ -4,5 +4,5 @@ export function getScoresFromRegexMatches(regexMatches: string[]): string[] | st
 
   regexMatchesCopy.shift();
 
-  return regexMatchesCopy.splice(regexMatchesCopy.length - 4, 3);
+  return regexMatchesCopy;
 }
